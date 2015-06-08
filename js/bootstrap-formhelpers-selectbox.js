@@ -180,7 +180,7 @@
     },
 
     mouseenter: function () {
-      var $this;
+      var $this,$parent;
 
       $this = $(this);
       $parent = getParent($this);
