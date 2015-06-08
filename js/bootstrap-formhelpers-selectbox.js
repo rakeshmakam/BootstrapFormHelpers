@@ -183,6 +183,9 @@
       var $this;
 
       $this = $(this);
+      $parent = getParent($this);
+      $parent.val($this.data('option'));
+      $parent.trigger('change.bfhselectbox');
 
       $this.focus();
     },
